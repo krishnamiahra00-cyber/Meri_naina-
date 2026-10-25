@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Favourite Pagli 💗</title>
+  <style>
+    :root { --pink:#ff5f9e; --deep:#b52b68; --cream:#fff7fb; --ink:#51243a; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0; font-family: "Trebuchet MS", Arial, sans-serif; color:var(--ink);
+      background: radial-gradient(circle at top left,#ffe1ee,transparent 40%),
+                  linear-gradient(135deg,#fff7fb,#ffe8f1 55%,#fbe4ff);
+      overflow-x:hidden;
+    }
+    .hearts { position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:0; }
+    .heart { position:absolute; bottom:-40px; opacity:.65; animation:floatUp linear infinite; }
+    @keyframes floatUp { to { transform:translateY(-115vh) rotate(25deg); opacity:0; } }
+    main { position:relative; z-index:1; width:min(920px,92%); margin:auto; padding:28px 0 55px; }
+    .hero { text-align:center; padding:36px 18px 25px; }
+    .pill { display:inline-block; background:#fff; border:1px solid #ffd0e3; border-radius:99px; padding:8px 14px; font-size:.85rem; }
+    h1 { font-size:clamp(2.2rem,7vw,4.6rem); line-height:1.05; margin:18px 0 12px; color:var(--deep); }
+    .subtitle { max-width:620px; margin:0 auto; line-height:1.7; font-size:1.05rem; }
+    .btn { border:0; cursor:pointer; background:var(--pink); color:white; border-radius:999px; padding:12px 19px; font-weight:800; box-shadow:0 8px 20px #ff5f9e35; transition:.2s; }
+    .btn:hover { transform:translateY(-2px); background:var(--deep); }
+    section { margin:20px 0; padding:clamp(20px,4vw,32px); background:#ffffffd9; border:1px solid #ffd6e6; border-radius:25px; box-shadow:0 12px 35px #9b356b0d; }
+    h2 { color:var(--deep); margin:0 0 15px; font-size:clamp(1.4rem,4vw,2rem); }
+    .photos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .photos img { display:block; width:100%; height:100%; min-height:180px; max-height:360px; object-fit:cover; border-radius:17px; border:3px solid white; box-shadow:0 5px 18px #7a204018; }
+    .caption { text-align:center; font-size:.9rem; margin-top:12px; opacity:.8; }
+    .line { background:#fff5fa; border-left:4px solid #ff85b4; padding:14px 16px; border-radius:12px; margin:10px 0; line-height:1.6; }
+    .roast { background:#fff1f5; border-left-color:#8e4cc5; }
+    .quiz-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .piece { border:2px dashed #f5a0c2; border-radius:15px; padding:18px 10px; text-align:center; background:#fff7fb; cursor:pointer; min-height:105px; display:flex; flex-direction:column; justify-content:center; gap:7px; font-weight:700; }
+    .piece span { font-size:1.7rem; }
+    .piece.revealed { background:#ffe1ee; border-style:solid; }
+    .small { font-size:.9rem; opacity:.8; line-height:1.6; }
+    .answer { min-height:30px; font-weight:700; color:var(--deep); margin-top:13px; }
+    .footer { text-align:center; padding:20px 10px; line-height:1.8; }
+    .hidden { display:none; }
+    @media(max-width:560px) { .photos,.quiz-grid { grid-template-columns:1fr 1fr; } .photos img { min-height:140px; } section { border-radius:20px; } }
+  </style>
+</head>
+<body>
+  <div class="hearts" id="hearts"></div>
+  <main>
+    <header class="hero">
+      <div class="pill">💌 A tiny website, with a giant amount of pyaar</div>
+      <h1>Oye, meri favourite<br>pagli! 💗</h1>
+      <p class="subtitle">Tumhari smile ke naam ek chhota sa surprise. Warning: is page mein extra pyaar, thodi si beizzati aur tumhari cuteness ke saboot milenge. 😌</p>
+      <p><a href="#surprise"><button class="btn">Surprise kholo ✨</button></a></p>
+    </header>
+
+    <section id="surprise">
+      <h2>📸 Meri cute si troublemaker</h2>
+      <div class="photos">
+        <img src="25211.jpg" alt="Tumhari cute photo collage" />
+        <img src="25211.jpg" alt="Tumhari smile wali photo collage" />
+      </div>
+      <p class="caption">Ek hi collage, par meri favourite expressions chaar. 💞</p>
+    </section>
+
+    <section>
+      <h2>💗 Thodi si dil ki baat</h2>
+      <div class="line">Tumse baat hoti hai toh normal sa din bhi thoda special lagne lagta hai. Tumhari smile meri favourite notification hai. 🥹</div>
+      <div class="line">Main tumhe har waqt perfect hone ke liye nahi chahta—bas tum apni real, silly, cute wali self rehna. Tum waise hi special ho.</div>
+      <div class="line">Agar mera din ek playlist hota, toh tum uska woh song hoti jise main skip kabhi nahi karta. 🎧💘</div>
+    </section>
+
+    <section>
+      <h2>😂 Ab thodi si roast therapy</h2>
+      <div class="line roast">Madam ka attitude itna premium hai ki lagta hai subscription bhi yearly leti ho. 😭</div>
+      <div class="line roast">Tumhara “bas 2 minute” aur Indian Standard Time—dono ka koi bharosa nahi. 😂</div>
+      <div class="line roast">Itni cute banne ki zaroorat nahi thi… ab meri concentration ki chhutti ho gayi. Complaint kahan karun? 🤨💗</div>
+      <p class="small">Roast sirf pyaar wala hai. Bura lage toh judge sahiba mujhe ek virtual fine laga sakti hain. 😌</p>
+    </section>
+
+    <section>
+      <h2>🧩 Photo puzzle: kitni dhyaan se dekhti ho?</h2>
+      <p class="small">Neeche har card tap karo. Chhote clues reveal honge—phir answer check karo!</p>
+      <div class="quiz-grid">
+        <button class="piece" data-text="Clue 1: Collage mein ek photo mein chashma hai 🤓"><span>🧩</span>Card 1</button>
+        <button class="piece" data-text="Clue 2: Ek photo mein tum wink kar rahi ho 😉"><span>💌</span>Card 2</button>
+        <button class="piece" data-text="Clue 3: Ek photo mein tumhari smile sabse bright hai 😁"><span>🌸</span>Card 3</button>
+        <button class="piece" data-text="Clue 4: Ek photo mein blue flower wala filter hai 💙"><span>✨</span>Card 4</button>
+      </div>
+      <div class="answer" id="clues" aria-live="polite"></div>
+      <p><strong>Final question:</strong> Is collage ki sabse cute cheez kya hai?</p>
+      <button class="btn" id="answerBtn">Answer reveal karo 💝</button>
+      <p class="answer hidden" id="finalAnswer">Obviously TUM! Photos toh bas proof collect karne ke liye hain. 🥹💗</p>
+    </section>
+
+    <section>
+      <h2>🫶 Ek mini promise</h2>
+      <p class="subtitle" style="text-align:left">Main har din filmy dialogue nahi maarunga (okay, koshish karunga 😭), lekin tumhari respect, tumhari feelings aur tumhari smile ki value zaroor karunga. Hum dono apni-apni real selves rehkar bhi ek dusre ke liye special ho sakte hain.</p>
+    </section>
+
+    <footer class="footer">
+      <h2>Made with extra pyaar 💌</h2>
+      <p>For my favourite human — tumhari pagli energy, meri favourite story. 💗</p>
+      <button class="btn" id="loveBtn">Ek last secret 💋</button>
+      <p class="answer hidden" id="secret">Secret: tum ye page padh rahi ho aur main yahan se hi tumhari smile imagine kar raha hoon. Ab smile kar do, warna ek aur roast ready hai. 😌💞</p>
+    </footer>
+  </main>
+  <script>
+    const hearts = document.getElementById('hearts');
+    for (let i=0;i<18;i++) {
+      const h=document.createElement('div'); h.className='heart'; h.textContent=['💗','💕','💖','✨'][i%4];
+      h.style.left=(Math.random()*100)+'%'; h.style.animationDuration=(7+Math.random()*8)+'s';
+      h.style.animationDelay=(-Math.random()*12)+'s'; h.style.fontSize=(14+Math.random()*18)+'px'; hearts.appendChild(h);
+    }
+    document.querySelectorAll('.piece').forEach(card => card.addEventListener('click', () => {
+      card.classList.add('revealed'); card.innerHTML='<span>💖</span>'+card.dataset.text;
+      document.getElementById('clues').textContent='Clue unlocked! Aur cards bhi tap karo. 👀';
+    }));
+    document.getElementById('answerBtn').addEventListener('click', () => {
+      document.getElementById('finalAnswer').classList.remove('hidden');
+    });
+    document.getElementById('loveBtn').addEventListener('click', () => {
+      document.getElementById('secret').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
